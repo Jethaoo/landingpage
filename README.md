@@ -1,70 +1,48 @@
-# ZUS Coffee–Inspired Landing Page (React + Vite)
+# ZUS Coffee–Inspired Landing Page
 
-A polished, production-style React landing page inspired by ZUS Coffee visuals.
+A simple static landing page clone for practice and quick customization.
 
-## Highlights
+## Files
 
-- Responsive, modern layout with hero, promos, menu cards, testimonials, app CTA, and FAQ.
-- Better UX details: hover states, visual hierarchy, badges, lazy-loaded product images.
-- Accessibility-minded semantics (`header`, `main`, `section`, `footer`, `details/summary`).
-- Easy customization in one place via `customHeroImage` and `products` in `src/App.jsx`.
+- `index.html` — page structure and sections
+- `styles.css` — responsive styling and theme
+- `script.js` — hero image + products configuration and rendering
+- `assets/` — local images folder (keep your custom images here)
 
-## Tech Stack
+## Quick Start
 
-- React 18
-- Vite 5
-- Plain CSS (`src/styles.css`)
-
-## Project Structure
-
-- `index.html` — Vite entry HTML
-- `src/main.jsx` — React bootstrap
-- `src/App.jsx` — landing page content + configurable data
-- `src/styles.css` — full responsive styling system
-- `assets/` — local image folder for your custom images
-
-## Run Locally
-
-```bash
-npm install
-npm run dev
-```
-
-Then open the local URL from the Vite output.
-
-## Build for Production
-
-```bash
-npm run build
-npm run preview
-```
+1. Open the project folder.
+2. Open `index.html` directly in your browser (or serve with any static server).
 
 ## Customize Hero Image
 
-1. Place your image file in `assets/` (example: `assets/hero.jpg`).
-2. In `src/App.jsx`, edit:
+1. Put your image in `assets/` (example: `assets/hero.jpg`).
+2. Edit `script.js`:
 
-```jsx
+```js
 const customHeroImage = "assets/hero.jpg";
 ```
 
-If empty, the default fallback image is used.
+If `customHeroImage` is empty, the default fallback image from HTML is used.
 
-## Customize Product Cards
+## Customize Products
 
-Update the `products` array in `src/App.jsx`:
+In `script.js`, edit the `products` array:
 
-```jsx
+```js
 const products = [
   {
     name: "Spanish Latte",
     description: "Silky milk, double espresso, caramel finish.",
     price: "$3.40",
     image: "assets/spanish-latte.jpg",
-    tag: "Best Seller",
   },
 ];
 ```
 
-Required fields: `name`, `description`, `price`, `image`.
-Optional field: `tag`.
+You can add, remove, or reorder products. Each card is rendered automatically.
+
+## Notes
+
+- This project is intentionally lightweight (no frameworks, no build step).
+- Best for mockups, practice cloning, and quick static page prototyping.
