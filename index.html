@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZUS Coffee Inspired Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="#">ZUS COFFEE</a>
+        <nav>
+          <a href="#menu">Menu</a>
+          <a href="#promo">Promotions</a>
+          <a href="#app">App</a>
+          <a href="#stores">Stores</a>
+        </nav>
+        <button class="btn btn-dark">Order now</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">A Necessity, Not a Luxury</p>
+            <h1>Specialty Coffee Made Accessible.</h1>
+            <p class="sub">
+              Enjoy handcrafted coffee, tea, and bites delivered to your doorstep.
+              Inspired by the bold, modern aesthetic of ZUS Coffee.
+            </p>
+            <div class="hero-cta">
+              <button class="btn btn-light">Download App</button>
+              <button class="btn btn-outline">View Menu</button>
+            </div>
+          </div>
+          <div class="hero-card">
+            <img
+              id="hero-image"
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80"
+              alt="Iced coffee"
+            />
+            <div class="floating-pill">From $2.90 • Freshly Brewed</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats container">
+        <article>
+          <h2>400+</h2>
+          <p>Stores across Southeast Asia</p>
+        </article>
+        <article>
+          <h2>1M+</h2>
+          <p>Monthly app users</p>
+        </article>
+        <article>
+          <h2>4.8★</h2>
+          <p>Average app rating</p>
+        </article>
+      </section>
+
+      <section id="promo" class="promo">
+        <div class="container">
+          <h2>Weekly Promotions</h2>
+          <div class="cards">
+            <article class="card">
+              <h3>Buy 1 Free 1</h3>
+              <p>Selected handcrafted drinks every Tuesday.</p>
+            </article>
+            <article class="card">
+              <h3>Breakfast Set</h3>
+              <p>Any coffee + croissant combo from 7am to 11am.</p>
+            </article>
+            <article class="card">
+              <h3>Delivery Deals</h3>
+              <p>Free delivery above $12 with in-app payment.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="menu container">
+        <div class="menu-header">
+          <h2>Best Sellers</h2>
+          <p>Edit product list in <code>script.js</code> → <code>products</code> array.</p>
+        </div>
+        <div class="menu-grid" id="product-grid"></div>
+      </section>
+
+      <section id="app" class="app-band">
+        <div class="container app-wrap">
+          <div>
+            <h2>Get Rewarded with Every Cup</h2>
+            <p>
+              Earn points, unlock exclusive member pricing, and enjoy faster checkout
+              using the ZUS-inspired mobile experience.
+            </p>
+          </div>
+          <button class="btn btn-dark">Get the App</button>
+        </div>
+      </section>
+
+      <section class="container customize-help">
+        <h2>Quick Customization</h2>
+        <ol>
+          <li>Place your image in <code>assets/</code> (for example <code>assets/hero.jpg</code>).</li>
+          <li>Open <code>script.js</code> and set <code>customHeroImage</code>.</li>
+          <li>Add/replace products in the <code>products</code> array.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer id="stores" class="site-footer">
+      <div class="container footer-wrap">
+        <p>© 2026 ZUS-style concept page. Built for educational cloning practice.</p>
+        <div>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">TikTok</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
