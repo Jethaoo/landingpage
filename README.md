@@ -1,48 +1,28 @@
-# ZUS Coffee–Inspired Landing Page
+# ZUS Coffee–Inspired Landing Page (React + Vite + Supabase)
 
-A simple static landing page clone for practice and quick customization.
+A React landing page demo with a customer chat dialog and an admin chat dashboard, persisted in Supabase.
 
-## Files
+## Scripts
 
-- `index.html` — page structure and sections
-- `styles.css` — responsive styling and theme
-- `script.js` — hero image + products configuration and rendering
-- `assets/` — local images folder (keep your custom images here)
+- `npm run dev` — run the Vite frontend.
+- `npm run build` — production build.
+- `npm run preview` — preview production build.
 
-## Quick Start
+## Environment variables
 
-1. Open the project folder.
-2. Open `index.html` directly in your browser (or serve with any static server).
+Create a `.env` file (or copy `.env.example`) and set:
 
-## Customize Hero Image
+- `VITE_SUPABASE_URL`
+- `VITE_SUPABASE_ANON_KEY`
 
-1. Put your image in `assets/` (example: `assets/hero.jpg`).
-2. Edit `script.js`:
+## Supabase setup
 
-```js
-const customHeroImage = "assets/hero.jpg";
-```
+1. Open `SUPABASE_SETUP.md`.
+2. Run the SQL in the Supabase SQL editor.
+3. Enable RLS policies according to your project requirements.
 
-If `customHeroImage` is empty, the default fallback image from HTML is used.
+## Local run
 
-## Customize Products
-
-In `script.js`, edit the `products` array:
-
-```js
-const products = [
-  {
-    name: "Spanish Latte",
-    description: "Silky milk, double espresso, caramel finish.",
-    price: "$3.40",
-    image: "assets/spanish-latte.jpg",
-  },
-];
-```
-
-You can add, remove, or reorder products. Each card is rendered automatically.
-
-## Notes
-
-- This project is intentionally lightweight (no frameworks, no build step).
-- Best for mockups, practice cloning, and quick static page prototyping.
+1. `npm install`
+2. `npm run dev`
+3. Open the URL printed by Vite.
